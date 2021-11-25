@@ -24,7 +24,7 @@ client.on("message", message => {
         .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
         .setTimestamp();
       message.channel.send({ embd1 });
-    } else if (args[1] === null) {
+    } else if (args[1] === null || message = prefix + "stop" || message = prefix + "stp" || message = prefix + "s") {
       message.reply("Whoops... Can you please include a stop number?")
       message.channel.send("Here is a list of stop numbers:")
       const embd2 = new Discord.RichEmbed()
