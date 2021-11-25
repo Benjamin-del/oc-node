@@ -13,7 +13,7 @@ client.on("message", message => {
 
   if (cmd === "ping") message.reply("pong");
 
-  if (cmd === "help") {
+  if (cmd === "stop" || cmd === "stp" || cmd === "s") {
     if (args[1] != null) {
       message.reply("Here are the results of my query")
       const embed = new Discord.RichEmbed()
@@ -21,7 +21,18 @@ client.on("message", message => {
         .setURL("https://map.oc-bot.tk/map/?stop=" + args[1]) 
         .setColor(0x7289DA)
         .setDescription("Results for the next busses at stop #" + args[1])
-        .setThumbnail("https://map.oc-bot.tk/favicon.ico")
+        .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
+        .setTimestamp();
+      message.channel.send({ embed });
+    } else if (args[1] === null) {
+      message.reply("Whoops... Can you please include a stop number?")
+      message.channel.send("Here is a list of stop numbers:")
+      const embed = new Discord.RichEmbed()
+        .setTitle("Stop numbers")
+        .setURL("https://www.octranspo.com/en/plan-your-trip/travel-tools/bus-stop-number-list/") 
+        .setColor(0x7289DA)
+        .setDescription("List of bus stops and stations in ottawa")
+        .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
         .setTimestamp();
       message.channel.send({ embed });
     }
