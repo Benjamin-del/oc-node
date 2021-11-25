@@ -19,8 +19,8 @@ client.on("message", message => {
       const embed = new Discord.RichEmbed()
         .setTitle("Info for the next bus to arive at stop #" + args[1])
         .setURL("https://map.oc-bot.tk/map/?stop=" + args[1]) 
-        .setColor(0x00ae86)
-        .setDescription()
+        .setColor(0x7289DA)
+        .setDescription("Results for the next busses at stop #" + args[1])
         .setThumbnail("https://map.oc-bot.tk/favicon.ico")
         .setTimestamp();
       message.channel.send({ embed });
