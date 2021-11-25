@@ -11,8 +11,8 @@ const data = new SlashCommandBuilder()
 	.setName('stop')
 	.setDescription('Replies with the data for the stop')
 	.addStringOption(option =>
-		option.setName('Stop number')
-			.setDescription('The stop number (Required)')
+		option.setName('stop number')
+			.setDescription('the stop number')
 			.setRequired(true));
 
 client.on("message", message => {
