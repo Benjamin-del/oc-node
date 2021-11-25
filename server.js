@@ -5,6 +5,16 @@ const client = new Discord.Client();
 const prefix = "!"; // just an example, change to whatever you want
 const { embeds } = require("discord.js");
 
+const { SlashCommandBuilder } = require('@discordjs/builders');
+
+const data = new SlashCommandBuilder()
+	.setName('stop')
+	.setDescription('Replies with the data for the stop')
+	.addStringOption(option =>
+		option.setName('Stop number')
+			.setDescription('The stop number (Required)')
+			.setRequired(true));
+
 client.on("message", message => {
   if (!message.content.startsWith(prefix)) return;
 
