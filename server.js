@@ -24,18 +24,7 @@ client.on("message", message => {
         .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
         .setTimestamp();
       message.channel.send({ embd1 });
-    } else if (args[1] === null || message.content === prefix + "stop" || message.content === prefix + "stp" || message.content === prefix + "s") {
-      message.reply("Whoops... Can you please include a stop number?")
-      message.channel.send("Here is a list of stop numbers:")
-      const embd2 = new Discord.RichEmbed()
-        .setTitle("Stop numbers")
-        .setURL("https://www.octranspo.com/en/plan-your-trip/travel-tools/bus-stop-number-list/") 
-        .setColor(0x7289DA)
-        .setDescription("List of bus stops and stations in ottawa")
-        .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
-        .setTimestamp();
-      message.channel.send({ embd2 });
-    }
+    } 
   }
 });
 client.login(process.env.BOT_TOKEN);
