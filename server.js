@@ -22,7 +22,6 @@ client.on("message", message => {
         .setColor(0x7289DA)
         .setDescription("Results for the next busses at stop #" + args[1])
         .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
-        .setTimestamp();
       message.channel.send({ embed });
     } 
   }
