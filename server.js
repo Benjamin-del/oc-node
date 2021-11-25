@@ -8,11 +8,11 @@ const { embeds } = require("discord.js");
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 const data = new SlashCommandBuilder()
-	.setName('stop')
-	.setDescription('Replies with the data for the stop')
+	.setName('setname')
+	.setDescription('setdiscription')
 	.addStringOption(option =>
-		option.setName('stop number')
-			.setDescription('the stop number')
+		option.setName('op.setname')
+			.setDescription('op.discription')
 			.setRequired(true));
 
 client.on("message", message => {
