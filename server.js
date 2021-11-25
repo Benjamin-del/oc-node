@@ -16,14 +16,14 @@ client.on("message", message => {
   if (cmd === "stop" || cmd === "stp" || cmd === "s") {
     if (args[1] != null) {
       message.reply("Here are the results of my query")
-      const embd1 = new Discord.RichEmbed()
+      const embed = new Discord.RichEmbed()
         .setTitle("Info for the next bus to arive at stop #" + args[1])
         .setURL("https://map.oc-bot.tk/map/?stop=" + args[1]) 
         .setColor(0x7289DA)
         .setDescription("Results for the next busses at stop #" + args[1])
         .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
         .setTimestamp();
-      message.channel.send({ embd1 });
+      message.channel.send({ embed });
     } 
   }
 });
