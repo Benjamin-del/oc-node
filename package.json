@@ -1,7 +1,7 @@
 {
-  "name": "hello-node",
+  "name": "OC-BOT",
   "version": "1.0.0",
-  "description": "A simple Node app built on fastify, instantly up and running.",
+  "description": "A Simple discord bot that provides info on busses in the city of otttawa",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -23,5 +23,5 @@
     "glitch",
     "express"
   ],
-  "author": ""
+  "author": "BENJA MEDIA"
 }
