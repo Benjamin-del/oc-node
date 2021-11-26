@@ -24,7 +24,8 @@ client.on("message", message => {
         .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
       message.channel.send({ embed });
     }
-  if (cmd === "hello") {
+	  
+  if (message.content.contains === "!hello") {
  	message.reply("Hello! My name is <@911715464751743076>!")
 	message.channel.send("I am a bot that provides near real-time data on Busses in the City Of Ottawa!")
 	message.channel.send("Stop numbers: I need a stop number to accses the GPS Data.")
