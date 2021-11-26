@@ -25,17 +25,5 @@ client.on("message", message => {
       message.channel.send({ embed });
     }  
   }
-client.on('message', message => {
-    var prefix = '!'
-    var msg = message.content;
-
-    if (msg === prefix + 'image') {
-        message.channel.send('Message that goes above image', {
-            files: [
-                "https://imgur.com/4ILisqH"
-            ]
-        });
-    }
-});
 });
 client.login(process.env.BOT_TOKEN);
