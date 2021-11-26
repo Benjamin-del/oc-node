@@ -23,14 +23,19 @@ client.on("message", message => {
         .setDescription("Results for the next busses at stop #" + args[1])
         .setThumbnail("https://map.oc-bot.tk/img/oc-bot-finial.png")
       message.channel.send({ embed });
-    }
-	  
-  if (message.content.contains === "!hello") {
- 	message.reply("Hello! My name is <@911715464751743076>!")
-	message.channel.send("I am a bot that provides near real-time data on Busses in the City Of Ottawa!")
-	message.channel.send("Stop numbers: I need a stop number to accses the GPS Data.")
-	message.channel.send("Here is an image describing the stop number" , {files: ["https://www.octranspo.com/uploads/How-to-read-bus-stop-sign-en.png"]}); 
-    }
+    }  
   }
+client.on('message', message => {
+    var prefix = '!'
+    var msg = message.content;
+
+    if (msg === prefix + 'image') {
+        message.channel.send('Message that goes above image', {
+            files: [
+                "https://imgur.com/4ILisqH"
+            ]
+        });
+    }
+});
 });
 client.login(process.env.BOT_TOKEN);
