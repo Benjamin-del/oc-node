@@ -1,17 +1,28 @@
 # OC BOT
+
+![Discord](https://img.shields.io/discord/912812428214034493?color=%237289DA&label=SUPPORT%20SERVER&style=for-the-badge)
+[![GitHub forks](https://img.shields.io/github/forks/Benjamin-del/oc-node?style=for-the-badge)](https://github.com/Benjamin-del/oc-node/network)
+[![GitHub license](https://img.shields.io/github/license/Benjamin-del/oc-node?style=for-the-badge)](https://github.com/Benjamin-del/oc-node)
+[![GitHub stars](https://img.shields.io/github/stars/Benjamin-del/oc-node?style=for-the-badge)](https://github.com/Benjamin-del/oc-node/stargazers)
+
 A simple Disocrd bot that provides data on busses in the city of ottawa!
 This bot is a simple as it gets... 
 
 # Instalation
-This was built for `Heroku` And I find that it works the best. To install on heroku follow these directions:
+I would recomend using `Heroku`:
 
 Click this button to deploy to heroku:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Benjamin-del/oc-node)
 
+Or click this button to fork it on github
+
+[![GitHub forks](https://img.shields.io/github/forks/Benjamin-del/oc-node?style=for-the-badge)](https://github.com/Benjamin-del/oc-node/network)
+
+
 Discord Token:
 
-You will require a Discord bot token Get one here:
+for this to work you will require a discord bot token Get one here:
 
 [Discord Derveloper dashboard](https://discordapi.com)
 
@@ -21,4 +32,4 @@ KEY: `BOT_TOKEN` VALUE: `YOUR TOKEN HERE!`
 
 You should also add your bot to your server...
 
-Once your bot is in your server please know that it will be redirecting users to `https://map.oc-bot.tk/map/
+Once your bot is in your server please know that it will be redirecting users to `https://map.oc-bot.tk/map/` Once The Web client is released we will have the option to configure the webpage. 
