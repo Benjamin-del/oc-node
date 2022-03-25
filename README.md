@@ -8,6 +8,7 @@
 A simple Disocrd bot that provides data on busses in the city of ottawa!
 This bot is a simple as it gets... 
 
+**I will be discontinuing this bot. Use https://transit.benja.ml Instead**
 # Demo 
 
 [Bot demo](https://discord.com/oauth2/authorize?response_type=code&client_id=911715464751743076&scope=bot&permissions=120259087360&scope=bot&redirect_uri=https://map.oc-bot.tk/a/bot.html&prompt=consent)
